@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IdCard</title>
+    <link href="/dist/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="bg-[#181818] w-screen h-screen flex flex-col items-center justify-center font-segoe leading-normal">
+        <!-- ID CARD -->
+        <div
+            class="flex flex-col gap-[10px] z-20 relative w-[500px] h-[300px] p-[15px] rounded-[10px] overflow-hidden bg-gradient-to-b from-[#7f6065] to-[#638e8d] group">
+            <!-- TOP PART -->
+            <div class="relative flex justify-evenly gap-[15px]">
+                <div>
+                    <img class="w-[50px] h-[60px]" src="assets/images/cg.png" />
+                </div>
+                <div>
+                    <p class="text-[19px] font-medium">
+                        Crna Gora
+                    </p>
+                    <p class="text-[14px] mt-[-5px]">
+                        Montenegro
+                    </p>
+                </div>
+                <div>
+                    <p class="text-[19px] font-medium">
+                        Licna karta
+                    </p>
+                    <p class="text-[14px] mt-[-5px]">
+                        Identity card
+                    </p>
+                </div>
+                <div class="flex">
+                    <img class="w-[60px] h-[60px]" src="/assets/images/cg2.png" />
+                    <p class="text-[19px] font-bold text-[#e3c5a0] ml-[-10px] mt-[10px]">
+                        MNE
+                    </p>
+                </div>
+                <p class="absolute top-[52px] left-[233px] text-white opacity-20 text-[19px] font-medium">
+                    CRNA GORA
+                </p>
+            </div>
+            <!-- BOTTOM PART -->
+            <div class="relative flex flex-1">
+                <!-- ID IMAGE -->
+                <div class="relative z-20 flex items-end">
+                    <img class="" src="/assets/images/profilePhoto.png" />
+                </div>
+                <!-- ID DATA -->
+                <div class="relative z-20 flex flex-col flex-1 ml-[8px]">
+                    <div>
+                        <span class="block text-[9px]">
+                            Prezime/Surname
+                        </span>
+                        <p class="font-medium font-rubik">
+                            DUMNIC
+                        </p>
+                    </div>
+                    <div>
+                        <span class="block text-[9px]">
+                            Ime/Given name
+                        </span>
+                        <p class="font-medium font-rubik">
+                            MARKO
+                        </p>
+                    </div>
+                    <div class="flex justify-between gap-[15px] w-full mt-[12px]">
+                        <div>
+                            <span class="block text-[9px]">
+                                Pol
+                            </span>
+                            <span class="block text-[9px]">
+                                Sex
+                            </span>
+                            <p class="font-medium">
+                                M/M
+                            </p>
+                        </div>
+                        <div>
+                            <span class="block text-[9px]">
+                                Drzavljanstvo
+                            </span>
+                            <span class="block text-[9px]">
+                                Nationality
+                            </span>
+                            <p class="font-medium">
+                                MNE
+                            </p>
+                        </div>
+                        <div>
+                            <span class="block text-[9px]">
+                                Datum rodjenja
+                            </span>
+                            <span class="block text-[9px]">
+                                Date of birth
+                            </span>
+                            <p class="font-medium">
+                                22.10.1995
+                            </p>
+                            <span class="invisible block text-[9px]">
+                                Invisible text
+                            </span>
+                            <span class="block text-[9px]">
+                                Potpis/Signature
+                            </span>
+                            <p class="text-[12px] font-medium font-cedarville mt-[5px]">
+                                Marko Dumnic
+                            </p>
+                        </div>
+                        <div>
+                            <span class="block text-[9px]">
+                                Broj licne karte
+                            </span>
+                            <span class="block text-[9px]">
+                                ID serial number
+                            </span>
+                            <p class="font-medium">
+                                **********
+                            </p>
+                            <span class="block text-[9px]">
+                                Datum vazenja
+                            </span>
+                            <span class="block text-[9px]">
+                                Date of expiry
+                            </span>
+                            <p class="font-medium">
+                                12.02.2029
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ABSOLUTE ELEMENT - CIRCLE WITH IMAGE -->
+                <div
+                    class="absolute z-10 w-[120px] h-[120px] rounded-full bg-white opacity-10 left-[77px] top-[-4px] overflow-hidden">
+                    <img class="h-[50px] w-[40px] mt-[20px] ml-[52px]" src="/assets/images/cg.png" />
+                    <p class="text-[#d4af3a] text-[15px] font-[900] mt-[35px] ml-[35px]">
+                        MNE
+                    </p>
+                    <p class="text-[#d4af3a] text-[15px] font-[900] mt-[-39px] ml-[50px]">
+                        MNE
+                    </p>
+                    <p class="text-[#d4af3a] text-[15px] font-[900] mt-[-39px] ml-[65px]">
+                        MNE
+                    </p>
+                    <p class="text-[#d4af3a] text-[15px] font-[900] mt-[-39px] ml-[80px]">
+                        MNE
+                    </p>
+                </div>
+                <!-- COUNTRY CODE ABSOLUTE -->
+                <svg width="400" height="100" class="absolute top-[7px] left-[212px] font-rubik">
+                    <text fill="white" fill-opacity="0.1" font-size="80" x="200" y="70" text-anchor="middle"
+                        stroke="#e3c5a0" stroke-opacity="0.1">
+                        CG
+                    </text>
+                </svg>
+                <!-- ABSOLUTE ELEMENT - PROFILE IMAGE -->
+                <div class="absolute w-[80px] h-[55px] rounded-[100px] bg-white top-[143px] left-[182px] opacity-20">
+                    <img src="/assets/images/profilePhoto.png"
+                        class="w-[47px] h-[52px] blur-[1.9px] ml-[18px] mt-[3px]" />
+                </div>
+            </div>
+            <!-- ABSOLUTE ELEMENTS - RIGHT LINES -->
+            <div class="absolute z-10 opacity-50 w-[220px] h-[300px] left-[290px]
+                top-[100px] bg-transparent border-[0.2px] border-[#aa485c]
+                border-b-0 border-r-0 rounded-tl-[120%]">
+            </div>
+            <div class="absolute z-10 opacity-30 w-[220px] h-[300px] left-[290px]
+                top-[133px] bg-transparent border-[0.2px] border-[#aa485c]
+                border-b-0 border-r-0 rounded-tl-[120%]">
+            </div>
+            <div class="absolute z-10 opacity-25 w-[220px] h-[300px] left-[290px]
+                top-[164px] bg-transparent border-[0.2px] border-[#aa485c]
+                border-b-0 border-r-0 rounded-tl-[120%]">
+            </div>
+            <div class="absolute z-10 opacity-20 w-[220px] h-[300px] left-[290px]
+                top-[195px] bg-transparent border-[0.2px] border-[#aa485c]
+                border-b-0 border-r-0 rounded-tl-[120%]">
+            </div>
+            <!-- ABSOLUTE ELEMENTS - LEFT LINES -->
+            <div class="absolute z-10 opacity-50 w-[350px] h-[450px] left-[-126px]
+                top-[-47px] bg-transparent border-[0.2px] border-[#aa485c] rounded-[150%]
+                transform rotate-[65deg]">
+            </div>
+            <div class="absolute z-10 opacity-30 w-[350px] h-[450px] left-[-147px]
+                top-[-39px] bg-transparent border-[0.2px] border-[#aa485c] rounded-[150%]
+                transform rotate-[65deg]">
+            </div>
+            <div class="absolute z-10 opacity-25 w-[350px] h-[450px] left-[-168px]
+                top-[-31px] bg-transparent border-[0.2px] border-[#aa485c] rounded-[150%]
+                transform rotate-[65deg]">
+            </div>
+            <div class="absolute z-10 opacity-20 w-[350px] h-[450px] left-[-189px]
+                top-[-24px] bg-transparent border-[0.2px] border-[#aa485c] rounded-[150%]
+                transform rotate-[65deg]">
+            </div>
+            <!-- WRAPPER HOVER EFFECT -->
+            <div class="absolute top-0 left-0 w-0 h-full bg-white bg-opacity-40
+                transition-all group-hover:w-[120%] group-hover:bg-opacity-0
+                group-hover:transition-all duration-[650ms] group-hover:duration-[650ms]
+                ease-in-out">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
